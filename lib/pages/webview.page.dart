@@ -72,6 +72,6 @@ class WebViewPageState extends State<WebViewPage> {
   }
 
   _loadHtml() async {
-    await webViewController.loadUrl(urlRequest: URLRequest(url: Uri.parse("https://fenixclient.servicesdigital.com.br/chat/N2xMYnovSDdNWUt6emZIN3R0bkd1UT09/VnhWSGZEaWx2eEhQVlovMlBjSE50UT09/ZlIzNXFUNktpclJyWk1zcHJGOU8vUT09/Teste")));
+    await webViewController.loadUrl(urlRequest: URLRequest(url: Uri.parse("fenix.url.com")));
   }
 }
