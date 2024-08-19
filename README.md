@@ -16,7 +16,10 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 # Using WebSocket Event
+To Test we use message event
+ - Message event is sent when sending or receiving message in chat
 
+Use websocket
 - To use the event websocket  on webview, you need to know the event names
 - After mapping the name of the events, it is necessary to inject javascript to add the window event listener when the event is emitted
 
@@ -25,7 +28,7 @@ samples, guidance on mobile development, and a full API reference.
 ```dart
     await webViewController.evaluateJavascript(source: '''
         socket.addEventListener('message', function(event) {
-            window.flutter_inappwebview.callHandler('OnMessage', event.text);
+            window.flutter_inappwebview.callHandler('OnMessage', event);
         });
         ''');
     
